@@ -31,61 +31,78 @@
     </properties>
 
     <dependencies>
-
+        
+        <!-- 🌐 Web & REST API (Spring MVC)
+                 Ger stöd för controllers, JSON-hantering, HTTP-endpoints, Tomcat m.m. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
+        <!-- 🗄️ JPA & Hibernate (ORM)
+                Används för databaslagring via Entities, Repositories och Hibernate. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- 🛢️ H2 in-memory databas
+                Perfekt för utveckling och tester. Startar automatiskt i RAM. -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
 
+        <!-- 🐬 MySQL JDBC-driver
+                Används om du kopplar projektet mot en MySQL-databas. -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
 
+        <!-- 🐘 PostgreSQL JDBC-driver
+               Används om du kopplar projektet mot en PostgreSQL-databas. -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
 
+
+        <!-- 🧪 Testning (JUnit, Mockito, Spring Test)
+             Ger stöd för enhetstester och integrationstester. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
+        <!-- 📘 Swagger UI / OpenAPI (SpringDoc)
+              Ger automatisk dokumentation av dina REST-endpoints på /swagger-ui.html. -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>3.0.1</version>
         </dependency>
 
+        <!-- 🔍 H2 web-konsol
+             Ger ett webbgränssnitt på /h2 där du kan se tabeller och köra SQL. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-h2console</artifactId>
         </dependency>
 
-    </dependencies>
+</dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
 
 </project>
