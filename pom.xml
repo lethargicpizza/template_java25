@@ -31,7 +31,7 @@
     </properties>
 
     <dependencies>
-        
+
         <!-- 🌐 Web & REST API (Spring MVC)
                  Ger stöd för controllers, JSON-hantering, HTTP-endpoints, Tomcat m.m. -->
         <dependency>
